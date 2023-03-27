@@ -11,6 +11,10 @@ public class Ex3 {
         printArray(array);
     }
 
+    /**
+     * вывод массива
+     * @param array массив
+     */
     private static void printArray(int[] array) {
         String result = "[";
         for (int i = 0; i < array.length; i++) {
@@ -19,6 +23,10 @@ public class Ex3 {
         System.out.println(result);
     }
 
+    /**
+     * Замена отрицательных элементов на сумму индексов двузначных элементов массива
+     * @param array массив
+     */
     private static void replaceNeg(int[] array) {
         int sum = 0;
 
