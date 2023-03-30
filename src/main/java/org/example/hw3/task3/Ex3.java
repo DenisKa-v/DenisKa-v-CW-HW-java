@@ -12,12 +12,12 @@ import java.util.List;
  */
 public class Ex3 {
     public static void main(String[] args) {
-        Books book1 = new Books("книга Пушкина", "Пушкин",100,1900,1500);
-        Books book2 = new Books("книга Лермонтова", "Лермонтов",100,1950,17);
-        Books book3 = new Books("книга Ахматовой", "Ахматова",100,2010,17);
-        Books book4 = new Books("книга Куприна", "Куприн",100,2010,37);
-        Books book5 = new Books("книга Толстого", "Толстой",100,2015,47);
-        Books book6 = new Books("книга Достоевского", "Достоевский",100,2020,46);
+        Books book1 = new Books("книга Пушкина", "Пушкин",120,2021,200);
+        Books book2 = new Books("книга Лермонтова", "Лермонтов",110,1950,170);
+        Books book3 = new Books("книга Ахматовой", "Ахматова",200,2011,127);
+        Books book4 = new Books("книга Куприна", "Куприн",200,2015,55);
+        Books book5 = new Books("книга Толстого", "Толстой",150,2020,350);
+        Books book6 = new Books("книга Достоевского", "Достоевский",100,2008,51);
 
         List<Books> listBooks = new ArrayList<>();
         listBooks.add(book1);
@@ -39,6 +39,11 @@ public class Ex3 {
         System.out.println(result);
     }
 
+    /**
+     * Проверка числа: простое оно или нет
+     * @param a проверяемое число
+     * @return является ли число простым
+     */
     public static boolean isSimple(int a) {
         Double sq = Math.sqrt(a);
         for (int i = 2; i <= sq.intValue(); i++) {
