@@ -12,7 +12,6 @@ public class Ex1 {
             inputLinkedList.add(i);
         }
         System.out.println(inputLinkedList);
-        System.out.println(inputLinkedList.size());
         LinkedList reversLinkedList = reverseList(inputLinkedList);
         System.out.println(reversLinkedList);
     }
