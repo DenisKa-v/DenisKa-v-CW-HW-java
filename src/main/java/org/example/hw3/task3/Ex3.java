@@ -12,12 +12,12 @@ import java.util.List;
  */
 public class Ex3 {
     public static void main(String[] args) {
-        Books book1 = new Books("книга Пушкина", "Пушкин",120,2021,200);
-        Books book2 = new Books("книга Лермонтова", "Лермонтов",110,1950,170);
-        Books book3 = new Books("книга Ахматовой", "Ахматова",200,2011,127);
-        Books book4 = new Books("книга Куприна", "Куприн",200,2015,55);
-        Books book5 = new Books("книга Толстого", "Толстой",150,2020,350);
-        Books book6 = new Books("книга Достоевского", "Достоевский",100,2008,51);
+        Books book1 = new Books("книга Пушкина", "Пушкин", 120, 2021, 200);
+        Books book2 = new Books("книга Лермонтова", "Лермонтов", 110, 1950, 170);
+        Books book3 = new Books("книга Ахматовой", "Ахматова", 200, 2011, 127);
+        Books book4 = new Books("книга Куприна", "Куприн", 200, 2015, 55);
+        Books book5 = new Books("книга Толстого", "Толстой", 150, 2020, 350);
+        Books book6 = new Books("книга Достоевского", "Достоевский", 100, 2008, 51);
 
         List<Books> listBooks = new ArrayList<>();
         listBooks.add(book1);
@@ -28,11 +28,10 @@ public class Ex3 {
         listBooks.add(book6);
 
         List<String> result = new ArrayList<>();
-        for(Books book : listBooks){
-            if(isSimple(book.getPageCount())
+        for (Books book : listBooks) {
+            if (isSimple(book.getPageCount())
                     & (book.getAuthor().contains("А") | book.getAuthor().contains("а"))
-                    & book.getYear() >= 2010
-            ){
+                    & book.getYear() >= 2010) {
                 result.add(book.getName());
             }
         }
@@ -41,6 +40,7 @@ public class Ex3 {
 
     /**
      * Проверка числа: простое оно или нет
+     *
      * @param a проверяемое число
      * @return является ли число простым
      */
